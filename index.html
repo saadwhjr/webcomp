@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandi - Fresh Vegetables Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Mandi</div>
+        <div class="location-selector">
+            Location <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="#" class="cart-btn" id="cartBtn">My Cart <span id="cartCount" class="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar Categories -->
+        <div class="sidebar">
+            <ul class="categories">
+                <li class="active"><a href="#">Fresh Vegetables</a></li>
+                <li><a href="#">Fresh Fruits</a></li>
+                <li><a href="#">Mangoes & Melons</a></li>
+                <li><a href="#">Seasonal</a></li>
+                <li><a href="#">Exotics</a></li>
+                <li><a href="#">Freshly Cut & Sprouts</a></li>
+                <li><a href="#">Frozen Veg</a></li>
+                <li><a href="#">Leafies & Herbs</a></li>
+            </ul>
+        </div>
+
+        <!-- Product Display Area -->
+        <div class="content">
+            <h1>Buy Fresh Vegetables Online</h1>
+            
+            <div class="products-grid">
+                <!-- Row 1 -->
+                <div class="product-card" data-id="1" data-name="Onion(Kanda)" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Onion" class="product-image">
+                    <h3>Onion(Kanda)</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>5Kg</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="2" data-name="Potato" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Potato" class="product-image">
+                    <h3>Potato</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>5Kg</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="3" data-name="Mirchi" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Mirchi" class="product-image">
+                    <h3>Mirchi</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>500g</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="4" data-name="Tomato" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Tomato" class="product-image">
+                    <h3>Tomato</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>5Kg</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="5" data-name="Lemon" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Lemon" class="product-image">
+                    <h3>Lemon</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>500g</option>
+                            <option>250g</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="product-card" data-id="6" data-name="Tomato" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Tomato" class="product-image">
+                    <h3>Tomato</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>5Kg</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="7" data-name="Carrot" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Carrot" class="product-image">
+                    <h3>Carrot</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>2Kg</option>
+                            <option>500g</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="8" data-name="Cauliflower" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Cauliflower" class="product-image">
+                    <h3>Cauliflower</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>1 piece</option>
+                            <option>2 pieces</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="9" data-name="Ladyfinger" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Ladyfinger" class="product-image">
+                    <h3>Ladyfinger</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>500g</option>
+                            <option>250g</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="10" data-name="Cucumber" data-price="72" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-udFy01pTJ7vuRYRJlabrjf9DCx7ohM.png" alt="Cucumber" class="product-image">
+                    <h3>Cucumber</h3>
+                    <div class="product-details">
+                        <select class="weight-selector">
+                            <option>1Kg</option>
+                            <option>500g</option>
+                            <option>2 pieces</option>
+                        </select>
+                        <div class="price-add">
+                            <span class="price">₹72</span>
+                            <button class="add-btn">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>My Cart</h2>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-footer">
+                <button class="proceed-btn">Proceed &gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

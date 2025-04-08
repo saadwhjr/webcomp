@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandi - Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="/">Mandi</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button class="search-btn" onclick="performSearch()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="#" class="cart-btn">My Cart</a>
+        </div>
+    </header>
+
+    <!-- Recent Searches Section -->
+    <section class="recent-searches">
+        <h2>Recent Searches</h2>
+        <div class="search-tags">
+            <button class="search-tag" onclick="searchTag('Potato')">Potato</button>
+            <button class="search-tag" onclick="searchTag('Onion')">Onion</button>
+            <button class="search-tag" onclick="searchTag('Mushroom')">Mushroom</button>
+            <button class="search-tag" onclick="searchTag('Ginger')">Ginger</button>
+            <button class="search-tag" onclick="searchTag('Capsicum')">Capsicum</button>
+        </div>
+    </section>
+
+    <!-- Advertisement Section -->
+    <section class="advertisement">
+        <div class="ad-container">
+            <div class="ad-content">AD</div>
+        </div>
+    </section>
+
+    <!-- Search Results Section (empty initially) -->
+    <section class="search-results" id="searchResults">
+        <!-- Search results will be displayed here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
